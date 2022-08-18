@@ -1,0 +1,36 @@
+<body>
+    
+</body>
+<div class="container-fluid" >
+    <div class="reviewbox" style="background-color: green;" >
+    
+    
+    <form>
+      <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" [formControl]="Email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Company Name</label>
+          <input type="email" [formControl]="CompanyName"class="form-control" id="exampleFormControlInput1" placeholder="XYZ Limited">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Designation</label>
+          <input type="email" [formControl]="Designation" class="form-control" id="exampleFormControlInput1" placeholder="Your role">
+        </div>
+        
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">REVIEW</label>
+          <textarea class="form-control" [formControl]="Review" id="exampleFormControlTextarea1" rows="3" placeholder="Type your review"></textarea>
+        </div>
+    
+        
+        
+        <!-- <button type="button" class="btn btn-primary">Submit Review</button> -->
+        <input type="submit"  class="btn btn-primary" (click)="reviewSubmit()" name="submit" value="Submit Review" > &nbsp; 
+        <input type="submit"  class="btn btn-primary"  routerLink="" name="submit" value="Cancel"  > 
+
+      </form>
+    </div>
+    </div>
+    

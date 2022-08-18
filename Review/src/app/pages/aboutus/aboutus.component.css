@@ -1,0 +1,33 @@
+p
+{
+    background-color: skyblue;
+}
+h1{
+    text-align: left;
+    padding-top: 2em;
+    padding-left: 3em;
+    font-family: cursive;
+    font-size: 80px;
+}
+
+
+.Backimage{
+        float:right;
+        margin-left: 125px;
+        margin-top: 170px;
+        margin-right: 150px;
+        width: 500px;
+        height: 500px;
+        border-radius: 100%;
+        overflow: hidden;
+        background-color: black;
+}
+
+
+.home .home-content .text-1 {
+    font-size: 27px;
+    font-family: cursive;
+    padding-top: 200px;
+    text-align: left;
+    width: 50%;
+}

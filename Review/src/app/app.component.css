@@ -1,0 +1,26 @@
+
+.navbar .navbar-brand{
+
+    color: white;
+
+    font-weight: bold;
+
+}
+.nav-item  a{
+    color: white;
+
+    font-weight: bold;
+}
+.navbar-nav a{
+    color: white;
+    font-weight: bold;
+}
+.navbar-nav i{
+    font-size: 30px;
+    text-align: center;
+    color: azure;
+    color: skyblue;
+}
+.navbar a span{
+    color: skyblue;
+}

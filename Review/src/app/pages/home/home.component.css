@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+    height: 91vh;
+    width: 100%;
+    background: url(../../../assets/HOMEBG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 60px;
+    padding-top: 130px;
+    font-family: cursive;
+    color: black;
+}
+
+#button {
+    text-align: center;
+}
+
+#button input {
+    background-color: skyblue;
+    border: none;
+    font-family: cursive;
+    margin-right: 10px;
+    color: black;
+    height: 40px;
+}

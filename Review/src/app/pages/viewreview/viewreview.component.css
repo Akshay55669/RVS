@@ -1,0 +1,56 @@
+/* service Section styling */
+#reviews{
+    font-family: 'Poppins' , sans-serif;
+    padding: 100px 0px;
+}
+
+
+ #reviews .sub-title{
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    margin-top: 20px;
+}
+
+.reviews-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    padding-left: 30px ;
+}
+
+.reviews-list div{
+    background: skyblue;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: back-ground 0.5s , transform 0.5s;
+    
+}
+.reviews-list div i{
+    font-size: 40px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.reviews-list div h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.reviews-list div a{
+  text-decoration: none;
+  color:black;
+  font-size: 20px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.reviews-list div:hover{
+ background: white;
+ transform: translateY(-10px);
+}

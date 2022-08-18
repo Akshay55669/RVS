@@ -1,0 +1,19 @@
+#contact{
+    font-size: larger;
+    text-align: center;
+    /* background-color: skyblue; */
+    height: 70vh;
+    width: 100%;
+    margin-top: 3em;
+}
+i{
+    font-size: 30px;
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+
+}
+body{
+    background-image: url('../../../assets/HOMEBG.jpg');
+}
