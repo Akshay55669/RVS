@@ -2,39 +2,50 @@
     <div class="container">
         <h1 class="sub-title">Reviews</h1>
         <div class="reviews-list">
-            <div>
-                <h4>Akash Rajak</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta cumque perferendis eveniet
-                    itaque, nisi architecto modi ipsa commodi culpa non laborum ea? Vel, blanditiis!</p>
+            <div *ngFor="let rd of reviewData">
+
+                <h3>{{rd.name}}</h3>
+                <h5>{{rd.companyName}}</h5>
+                <h6>{{rd.designation}}</h6>
+                <div *ngIf="!reviewData.Status">
+                    <p style="background-color: red;">{{rd.reviews}}</p>
+                </div>
+                <div *ngIf="reviewData.Status">
+                    <p style="background-color: green;">{{rd.reviews}}</p>
+                </div>
             </div>
-            <div>
-                <h4>Akash Rajak</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta cumque perferendis eveniet
-                    itaque, nisi architecto modi ipsa commodi culpa non laborum ea? Vel, blanditiis!</p>
-            </div>
-            <div>
-                <h4>Akash Rajak</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta cumque perferendis eveniet
-                    itaque, nisi architecto modi ipsa commodi culpa non laborum ea? Vel, blanditiis!</p>
-            </div>
-            <div>
-                <h4>Akash Rajak</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta cumque perferendis eveniet
-                    itaque, nisi architecto modi ipsa commodi culpa non laborum ea? Vel, blanditiis!</p>
-            </div>
-            <div>
-                <h4>Akash Rajak</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta cumque perferendis eveniet
-                    itaque, nisi architecto modi ipsa commodi culpa non laborum ea? Vel, blanditiis!</p>
-            </div>
-            <div>
             
-                    <h4>Akash Rajak</h4>
-                <i class="bi bi-twitter"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta cumque perferendis eveniet
-                    itaque, nisi architecto modi ipsa commodi culpa non laborum ea? Vel, blanditiis!</p>
-            
-            </div>
+
         </div>
     </div>
 </div>
+
+<!-- <div>
+        
+        <h4>Akash Rajak</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta cumque perferendis eveniet
+            itaque, nisi architecto modi ipsa commodi culpa non laborum ea? Vel, blanditiis!</p>
+    </div>
+    <div>
+        <h4>Akash Rajak</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta cumque perferendis eveniet
+            itaque, nisi architecto modi ipsa commodi culpa non laborum ea? Vel, blanditiis!</p>
+    </div>
+    <div>
+        <h4>Akash Rajak</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta cumque perferendis eveniet
+            itaque, nisi architecto modi ipsa commodi culpa non laborum ea? Vel, blanditiis!</p>
+    </div>
+    <div>
+        <h4>Akash Rajak</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta cumque perferendis eveniet
+            itaque, nisi architecto modi ipsa commodi culpa non laborum ea? Vel, blanditiis!</p>
+    </div>
+    <div>
+    
+            <h4>Akash Rajak</h4>
+        <i class="bi bi-twitter"></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta cumque perferendis eveniet
+            itaque, nisi architecto modi ipsa commodi culpa non laborum ea? Vel, blanditiis!</p>
+    
+    </div> -->

@@ -10,10 +10,10 @@ import { ReviewService } from 'src/app/Services/review.service';
 })
 export class AddreviewComponent implements OnInit {
 
-  Email:FormControl=new FormControl("")
+  Name:FormControl=new FormControl("")
   CompanyName:FormControl=new FormControl("")
   Designation:FormControl=new FormControl("")
-  REview:FormControl=new FormControl("")
+  Reviews:FormControl=new FormControl("")
 
   constructor(private review:ReviewService) { }
 
@@ -22,12 +22,27 @@ export class AddreviewComponent implements OnInit {
 
 
   reviewSubmit(){
+    debugger;
     let details:IReview={
-      Email:this.Email.value,
+      Name:this.Name.value,
       CompanyName:this.CompanyName.value,
       Designation:this.Designation.value,
-      Review:this.REview.value
+      Reviews:this.Reviews.value
     };
+    var key:string=details.Reviews.toLowerCase();
+    if(key.includes("Poor")||key.includes("worst")||key.includes("bad")||key.includes("not")
+    ||key.includes("disappointed")||key.includes("zero")||key.includes("hate")||key.includes("fake")
+    ||key.includes("unfair")||key.includes("unhappy")||key.includes("misunderstood"))
+    {
+        console.log("Negative Review") 
+      }
+      else{
+        
+        console.log("Positive Review");
+        details.status=!details.status;
+        this.review.reviewStatus(details)
+
+    }
     this.review.review(details);
     console.log(details);
   }

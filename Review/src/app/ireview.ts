@@ -1,7 +1,8 @@
 export interface IReview {
     id?:number;
-    Email:string;
+    Name:string;
     CompanyName:string;
     Designation:string;
-    Review:string;
+    Reviews:string;
+    status?:boolean;
 }
